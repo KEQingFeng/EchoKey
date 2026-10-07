@@ -1,0 +1,56 @@
+{
+  "title": "EchoKey — EarPods 线控 → 动作",
+  "swallow_original": true,
+  "rules": [
+    {
+      "description": "EarPods 中键单击 → 调度中心 (Ctrl+↑)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": { "consumer_key_code": "play_or_pause" },
+          "to": [ { "key_code": "up_arrow", "modifiers": ["left_control"] } ]
+        }
+      ]
+    },
+    {
+      "description": "EarPods 中键双击 → App 窗口 (Ctrl+↓)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": { "consumer_key_code": "scan_next_track" },
+          "to": [ { "key_code": "down_arrow", "modifiers": ["left_control"] } ]
+        }
+      ]
+    },
+    {
+      "description": "EarPods 中键三击 → 区域截图 (Cmd+Shift+4)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": { "consumer_key_code": "scan_previous_track" },
+          "to": [ { "key_code": "4", "modifiers": ["left_command", "left_shift"] } ]
+        }
+      ]
+    },
+    {
+      "description": "EarPods 音量＋ → Fn (地球键)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": { "consumer_key_code": "volume_increment" },
+          "to": [ { "key_code": "fn", "modifiers": ["fn"] } ]
+        }
+      ]
+    },
+    {
+      "description": "EarPods 音量－ → Enter",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": { "consumer_key_code": "volume_decrement" },
+          "to": [ { "key_code": "return_or_enter" } ]
+        }
+      ]
+    }
+  ]
+}

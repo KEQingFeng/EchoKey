@@ -1,0 +1,6 @@
+# 构建产物
+dist/
+*.app
+
+# macOS
+.DS_Store
